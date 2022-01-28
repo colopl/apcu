@@ -130,7 +130,6 @@ PHP_APCU_API apc_serializer_t* apc_find_serializer(const char* name) {
 			return serializer;
 		}
 	}
-
 	return NULL;
 } /* }}} */
 
