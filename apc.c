@@ -130,6 +130,9 @@ PHP_APCU_API apc_serializer_t* apc_find_serializer(const char* name) {
 			return serializer;
 		}
 	}
+
+	php_error_docref(NULL, E_WARNING, "apc_find_serializer: serializer \"%s\" does not registered.", name);
+
 	return NULL;
 } /* }}} */
 
